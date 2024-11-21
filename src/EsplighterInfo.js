@@ -65,8 +65,6 @@ export default function EsplighterInfo({ nom, light, lightMax, lightMin, jwt, es
       console.error("Erreur lors de la mise à jour:", result.error);
     } else {
       console.log("Détails mis à jour avec succès:", result);
-      // Mettre à jour les valeurs d'état si nécessaire
-      // (Optionnel : tu pourrais vouloir forcer un re-render en utilisant un state global ou un context)
     }
     
     setIsModalOpen(false); // Ferme la popup après sauvegarde

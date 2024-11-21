@@ -18,6 +18,7 @@ function App() {
     const fetchData = async () => {
       const result = await getEsplighter(jwt);
       if (result.error) {
+        console.log("Données pas récupérées :", result);
       } else {
         setEsplighterData(result); // Définit les données reçues
         console.log("Données récupérées :", result);
